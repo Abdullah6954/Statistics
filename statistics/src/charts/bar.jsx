@@ -4,10 +4,10 @@ import { Bar } from "react-chartjs-2";
 class BarChart extends Component{
     render(){
         return(
-            <div className="w-50 h-50">   
+            <div className="w-100 vh-100">   
                 <Bar
-                    width={.100}
-                    height={.100}
+                width={100}
+                height={100}
                     data={{
                         type: 'bar',
                         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],

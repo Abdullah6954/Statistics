@@ -13,6 +13,20 @@ $red: #f50057;
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
+#App {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  section {
+    scroll-snap-align: start;
+  }
+}
+
 nav {
   @include Center();
   position: fixed;
@@ -86,6 +100,7 @@ nav {
   background-size: cover;
   height: 100vh;
   @include Center();
+  flex-direction: column;
   img {
     width: 80%;
     height: 80%;
@@ -99,6 +114,7 @@ nav {
     background-clip: text;
     color: transparent;
     font-weight: bold;
+    transition: 0.2s ease-in-out;
   }
 }
 

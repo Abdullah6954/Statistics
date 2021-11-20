@@ -5,7 +5,7 @@ import Aos from 'aos';
 import React, { useEffect } from 'react';
 
 // Charts
-// import BarChart from './charts/bar';
+import BarChart from './charts/bar';
 
 // Components
 import Nav from './components/nav';
@@ -21,12 +21,14 @@ function App() {
   
   // JSX
   return (
-    <div>
+    <div id="App">
       <section>
         <Nav />
         <Intro />
       </section>
-      {/* <BarChart /> */}
+      <section>
+        <BarChart />
+      </section>
     </div>
   );
 }

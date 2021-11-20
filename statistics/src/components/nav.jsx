@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import arrowDown from '../images/arrowDown.svg';
 
 class Nav extends Component{
@@ -18,7 +18,7 @@ class Nav extends Component{
         }
     }
     state={
-        hovered: false
+        hovered: false,
     }
     render(){
         return(
