@@ -4,8 +4,12 @@ import "aos/dist/aos.css";
 import Aos from 'aos';
 import React, { useEffect } from 'react';
 
-//charts
+// Charts
 // import BarChart from './charts/bar';
+
+// Components
+import Nav from './components/nav';
+import Intro from './components/intro';
 
 function App() {
   // AOS Settings
@@ -18,6 +22,10 @@ function App() {
   // JSX
   return (
     <div>
+      <section>
+        <Nav />
+        <Intro />
+      </section>
       {/* <BarChart /> */}
     </div>
   );

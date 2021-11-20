@@ -4,4 +4,117 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid black;
+}
+
+nav #brand {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 10px 30px;
+  padding: 5px 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f50057), to(#6c63ff));
+  background-image: linear-gradient(90deg, #f50057, #6c63ff);
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 10px 5px;
+  padding: 5px 15px;
+  background-color: #6c63ff;
+  -webkit-box-shadow: 0 5px 0 #6b63ff86;
+          box-shadow: 0 5px 0 #6b63ff86;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  padding: 5px 20px;
+}
+
+nav ul li select {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav ul li select:focus {
+  outline-style: none;
+}
+
+nav ul li select option {
+  background-color: #f50057;
+}
+
+#intro {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro img {
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 600px) {
+  #intro img {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*# sourceMappingURL=App.css.map */
