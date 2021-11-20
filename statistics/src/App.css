@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Estonia&family=Luckiest+Guy&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,15 +29,24 @@ nav {
 
 nav #brand {
   font-size: x-large;
-  font-weight: bold;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
   margin: 10px 30px;
   padding: 5px 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f50057), to(#6c63ff));
-  background-image: linear-gradient(90deg, #f50057, #6c63ff);
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
   background-clip: text;
   color: transparent;
   text-decoration: none;
   border-radius: 5px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+nav #brand:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  letter-spacing: 3px;
 }
 
 nav ul {
@@ -77,23 +87,32 @@ nav ul li:hover {
   padding: 5px 20px;
 }
 
-nav ul li select {
-  background-color: #6c63ff;
+nav ul li div {
+  position: relative;
+  width: 100%;
+}
+
+nav ul li div a {
+  background-color: rgba(250, 250, 250, 0.3);
   color: white;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
 }
 
-nav ul li select:focus {
-  outline-style: none;
-}
-
-nav ul li select option {
-  background-color: #f50057;
+nav ul li div a:hover {
+  color: white;
+  background-color: #6c63ff;
+  padding: 5px;
 }
 
 #intro {
+  background-image: url("./images/backgroundIntro.svg");
+  background-size: cover;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,10 +130,31 @@ nav ul li select option {
   height: 80%;
 }
 
-@media (max-width: 600px) {
+#intro h3 {
+  position: absolute;
+  font-family: "Estonia", cursive;
+  font-size: 5rem;
+  margin-left: 70px;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+@media (min-width: 599px) and (max-width: 1100px) {
+  #intro h3 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 800px) {
   #intro img {
     width: 100%;
     height: 100%;
+  }
+  #intro h3 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=App.css.map */
