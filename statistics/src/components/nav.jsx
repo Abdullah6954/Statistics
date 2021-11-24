@@ -22,7 +22,7 @@ class Nav extends Component{
     }
     render(){
         return(
-            <nav>
+            <nav data-aos="fade-down">
                 <a id="brand" href="https://abud-personal-website.netlify.com">Naranja</a>
                 <ul>
                     <a href="#brand"><li>Home</li></a>

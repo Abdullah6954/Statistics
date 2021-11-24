@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 class LineChart extends Component{
   render(){
     return(
-      <div>
+      <div className="h-100">
         <Line
          width={100}
          height={100}
@@ -30,13 +30,6 @@ class LineChart extends Component{
                                 'rgba(153, 102, 255, 1)',
                                 'rgba(255, 159, 64, 1)'
                             ],
-                            borderWidth: 1
-                        },
-                        {
-                            label: '# of Votes',
-                            data: [8, 12, 5, 3, 17, 9],
-                            backgroundColor: 'orange',
-                            borderColor: 'orange',
                             borderWidth: 1
                         }]
                     }}

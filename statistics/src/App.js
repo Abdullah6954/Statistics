@@ -10,6 +10,9 @@ import BarChart from './charts/bar';
 // Components
 import Nav from './components/nav';
 import Intro from './components/intro';
+import LineChart from './charts/line';
+import BarLine from './charts/barLine';
+import Gap from './components/gap';
 
 function App() {
   // AOS Settings
@@ -27,7 +30,16 @@ function App() {
         <Intro />
       </section>
       <section>
-        <BarChart />
+        <Gap />
+      </section>
+      <section>
+        <div id="chartsDiv">
+          <BarChart />
+          <LineChart />
+        </div>
+        <div id="bothCountries">
+          <BarLine />
+        </div>
       </section>
     </div>
   );

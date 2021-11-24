@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Estonia&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Luckiest+Guy&display=swap");
 
 $blue: #6c63ff;
 $red: #f50057;
@@ -19,7 +19,7 @@ body {
 
 #App {
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   overflow-x: hidden;
   section {
@@ -35,6 +35,7 @@ nav {
   background-color: transparent;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid black;
+  z-index: 100;
   #brand {
     font-size: x-large;
     font-family: "Luckiest Guy", cursive;
@@ -69,6 +70,7 @@ nav {
       border-radius: 5px;
       cursor: pointer;
       transition: 200ms ease-in-out;
+      font-family: "Lobster", cursive;
       &:hover {
         transform: scale(1.1);
         padding: 5px 20px;
@@ -99,6 +101,7 @@ nav {
   background-image: url("./images/backgroundIntro.svg");
   background-size: cover;
   height: 100vh;
+  position: relative;
   @include Center();
   flex-direction: column;
   img {
@@ -107,14 +110,78 @@ nav {
   }
   h3 {
     position: absolute;
-    font-family: "Estonia", cursive;
-    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    font-size: 4rem;
     margin-left: 70px;
     background-image: linear-gradient(90deg, red, blue);
     background-clip: text;
     color: transparent;
     font-weight: bold;
     transition: 0.2s ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+section:nth-child(2) {
+  #gap {
+    background-image: url("./images/circles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    @include Center();
+    h3 {
+      position: relative;
+      font-family: "Lobster", cursive;
+      font-size: 5rem;
+      color: $red;
+      padding: 5px 50px;
+      transition: 0.2s ease-in-out;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background-color: $blue;
+        transition: 0.2s ease-in;
+        mix-blend-mode: multiply;
+      }
+      &:hover {
+        &::before {
+          content: "";
+          border-top-right-radius: 50px;
+          border-top-left-radius: 50px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+section:nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  #chartsDiv {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    div {
+      width: 50%;
+    }
+  }
+  #bothCountries {
+    width: 100%;
+    height: 50%;
   }
 }
 
@@ -133,7 +200,19 @@ nav {
       height: 100%;
     }
     h3 {
-      font-size: 2em;
+      font-size: 1.5em;
+    }
+  }
+  section:nth-child(3) {
+    #chartsDiv {
+      display: block;
+      div {
+        width: 100%;
+        height: 50%;
+      }
+    }
+    #bothCountries {
+      transform: translateY(100%);
     }
   }
 }
