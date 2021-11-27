@@ -12,7 +12,7 @@ class BarLine extends Component{
                         type: 'bar',
                         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                         datasets: [{
-                            label: '# of Votes',
+                            label: 'Germany',
                             data: [12, 19, 3, 5, 2, 3],
                             backgroundColor: 'yellow',
                             borderColor: 'red',
@@ -20,7 +20,7 @@ class BarLine extends Component{
                         },
                         {
                             type: 'line',
-                            label: '# of Votes',
+                            label: 'France',
                             data: [12, 19, 3, 5, 2, 3],
                             backgroundColor: 'blue',
                             borderColor: 'red',

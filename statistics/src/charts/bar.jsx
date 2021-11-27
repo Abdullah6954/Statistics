@@ -12,7 +12,7 @@ class BarChart extends Component{
                         type: 'bar',
                         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                         datasets: [{
-                            label: '# of Votes',
+                            label: 'Germany',
                             data: [12, 19, 3, 5, 2, 3],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',

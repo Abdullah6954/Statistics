@@ -6,12 +6,12 @@ import React, { useEffect } from 'react';
 
 // Charts
 import BarChart from './charts/bar';
+import LineChart from './charts/line';
+import BarLine from './charts/barLine';
 
 // Components
 import Nav from './components/nav';
 import Intro from './components/intro';
-import LineChart from './charts/line';
-import BarLine from './charts/barLine';
 import Gap from './components/gap';
 
 function App() {
@@ -25,13 +25,16 @@ function App() {
   // JSX
   return (
     <div id="App">
+
       <section>
         <Nav />
         <Intro />
       </section>
+
       <section>
         <Gap />
       </section>
+
       <section>
         <div id="chartsDiv">
           <BarChart />
@@ -41,6 +44,7 @@ function App() {
           <BarLine />
         </div>
       </section>
+
     </div>
   );
 }

@@ -42,6 +42,26 @@ nav {
           backdrop-filter: blur(10px);
   border-bottom: 1px solid black;
   z-index: 100;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+nav #img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #6c63ff;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+nav #img:hover {
+  border-radius: 25%;
 }
 
 nav #brand {
@@ -111,7 +131,7 @@ nav ul li div {
 }
 
 nav ul li div a {
-  background-color: rgba(250, 250, 250, 0.3);
+  background-color: rgba(247, 55, 55, 0.6);
   color: white;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);

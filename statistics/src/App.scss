@@ -36,6 +36,21 @@ nav {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid black;
   z-index: 100;
+  transition: 0.2s ease-in-out;
+  #img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: $blue;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      border-radius: 25%;
+    }
+  }
   #brand {
     font-size: x-large;
     font-family: "Luckiest Guy", cursive;
@@ -79,7 +94,7 @@ nav {
         position: relative;
         width: 100%;
         a {
-          background-color: rgba(250, 250, 250, 0.3);
+          background-color: rgba(247, 55, 55, 0.6);
           color: white;
           backdrop-filter: blur(5px);
           width: 100%;
