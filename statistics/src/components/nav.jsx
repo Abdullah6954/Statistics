@@ -41,7 +41,7 @@ class Nav extends Component{
                         id="img" src={this.state.clicked ? show : hide} alt={this.state.text}
                         onClick={() => this.setState({clicked: !this.state.clicked, text: !this.state.clicked ? 'Hide' : 'Show'})}
                 />
-                <a id="brand" href="https://abud-personal-website.netlify.com">Naranja</a>
+                <a id="brand" href="https://abud-personal-website.netlify.com" rel="noreferrer" target="_blank">Naranja</a>
                 <ul>
                     <a href="#brand"><li>Home</li></a>
                     <li style={{backgroundColor: this.state.hovered ? '#f50057' :'#6c63ff'}} onMouseEnter={() => this.setState({hovered: true})}

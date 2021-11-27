@@ -8,6 +8,7 @@ import React, { useEffect } from 'react';
 import BarChart from './charts/bar';
 import LineChart from './charts/line';
 import BarLine from './charts/barLine';
+import DoughnutChart from './charts/doughnut';
 
 // Components
 import Nav from './components/nav';
@@ -43,6 +44,10 @@ function App() {
         <div id="bothCountries">
           <BarLine />
         </div>
+      </section>
+
+      <section className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
+        <DoughnutChart />
       </section>
 
     </div>
