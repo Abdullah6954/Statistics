@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "aos/dist/aos.css";
-import Aos from 'aos';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import React, { useEffect } from 'react';
 
 // Charts
@@ -18,7 +18,7 @@ import Gap from './components/gap';
 function App() {
   // AOS Settings
   useEffect(() => {
-    Aos.init({
+    AOS.init({
       duration : 1000
     });
   }, []);
@@ -32,11 +32,11 @@ function App() {
         <Intro />
       </section>
 
-      <section>
+      <section data-aos="fade-up">
         <Gap />
       </section>
 
-      <section>
+      <section style={{height: '100vh'}}>
         <div id="chartsDiv">
           <BarChart />
           <LineChart />

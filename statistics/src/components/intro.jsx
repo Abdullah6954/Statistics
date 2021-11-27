@@ -3,9 +3,9 @@ import statis from '../images/statis.svg';
 
 const Intro = () => {
     return(
-        <div id="intro">
-            <img src={statis} alt="statis" />
-            <h3>Welcome To My Presentation</h3>
+        <div data-aos="zoom-out" id="intro">
+            <img data-aos="flip-left" src={statis} alt="statis" />
+            <h3 data-aos="flip-right">Welcome To My Presentation</h3>
         </div>
     );
     

@@ -14,13 +14,13 @@ $red: #f50057;
 }
 
 body {
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 #App {
-  height: 100vh;
+  // height: 100vh;
   scroll-snap-type: y proximity;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   section {
     scroll-snap-align: start;
