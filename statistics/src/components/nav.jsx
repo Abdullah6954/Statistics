@@ -50,7 +50,8 @@ class Nav extends Component{
                         Menu <img width="15px" height="15px" src={arrowDown} alt="."/>
                         <div style={!this.state.hovered ? this.style.div : this.style.divHover}>
                             <a href="#world">World</a>
-                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#countries">Countries</a>
+                            <a href="#countries">Countries</a>
+                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#fastFood">Fast Food</a>
                         </div>
                     </li>
                 </ul>

@@ -51,7 +51,7 @@ function App() {
         <DoughnutChart />
       </section>
 
-      <section id="fifth">
+      <section id="fastFood">
         <Calories />
       </section>
 
