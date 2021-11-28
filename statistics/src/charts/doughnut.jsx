@@ -4,7 +4,7 @@ import { Doughnut } from "react-chartjs-2";
 class DoughnutChart extends Component{
     render(){
         return(
-            <div>
+            <div data-aos="zoom-out">
                 <span>The World</span>
                 <Doughnut
                     width={100}

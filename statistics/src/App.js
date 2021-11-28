@@ -27,16 +27,16 @@ function App() {
   return (
     <div id="App">
 
-      <section>
+      <section id="home">
         <Nav />
         <Intro />
       </section>
 
-      <section data-aos="fade-up">
+      <section>
         <Gap />
       </section>
 
-      <section style={{height: '100vh'}}>
+      <section id="countries" style={{height: '100vh'}}>
         <div id="chartsDiv">
           <BarChart />
           <LineChart />
@@ -46,7 +46,7 @@ function App() {
         </div>
       </section>
 
-      <section className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
+      <section id="world" className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
         <DoughnutChart />
       </section>
 

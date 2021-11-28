@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 class LineChart extends Component{
   render(){
     return(
-      <div className="h-100">
+      <div data-aos="zoom-in" className="h-100">
         <Line
          width={100}
          height={100}

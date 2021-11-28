@@ -4,7 +4,7 @@ import { Bar } from "react-chartjs-2";
 class BarLine extends Component{
     render(){
         return(
-            <div className="h-100">
+            <div data-aos="flip-down" className="h-100">
                 <Bar
                 width={100}
                 height={100}

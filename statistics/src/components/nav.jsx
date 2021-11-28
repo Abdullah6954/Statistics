@@ -43,15 +43,14 @@ class Nav extends Component{
                 />
                 <a id="brand" href="https://abud-personal-website.netlify.com" rel="noreferrer" target="_blank">Naranja</a>
                 <ul>
-                    <a href="#brand"><li>Home</li></a>
+                    <a href="#home"><li>Home</li></a>
                     <li style={{backgroundColor: this.state.hovered ? '#f50057' :'#6c63ff'}} onMouseEnter={() => this.setState({hovered: true})}
                         onMouseLeave={() => this.setState({hovered: false})}
                     >
                         Menu <img width="15px" height="15px" src={arrowDown} alt="."/>
                         <div style={!this.state.hovered ? this.style.div : this.style.divHover}>
-                            <a href="#brand">World</a>
-                            <a href="#brand">Germany</a>
-                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#brand">France</a>
+                            <a href="#world">World</a>
+                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#countries">Countries</a>
                         </div>
                     </li>
                 </ul>

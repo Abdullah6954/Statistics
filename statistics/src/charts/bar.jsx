@@ -4,7 +4,7 @@ import { Bar } from "react-chartjs-2";
 class BarChart extends Component{
     render(){
         return(
-            <div className="h-100">  
+            <div data-aos="zoom-in" className="h-100">  
                 <Bar
                     width={100}
                     height={100}
