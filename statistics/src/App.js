@@ -14,6 +14,7 @@ import DoughnutChart from './charts/doughnut';
 import Nav from './components/nav';
 import Intro from './components/intro';
 import Gap from './components/gap';
+import Calories from './components/calories';
 
 function App() {
   // AOS Settings
@@ -48,6 +49,10 @@ function App() {
 
       <section id="world" className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
         <DoughnutChart />
+      </section>
+
+      <section id="fifth">
+        <Calories />
       </section>
 
     </div>

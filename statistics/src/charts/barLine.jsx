@@ -10,20 +10,36 @@ class BarLine extends Component{
                 height={100}
                     data={{
                         type: 'bar',
-                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        labels: ['Male', 'Female', 'Kids'],
                         datasets: [{
                             label: 'Germany',
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: 'yellow',
-                            borderColor: 'red',
+                            data: [23, 24, 15, 100],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.7)',
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 206, 86, 0.7)',
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                            ],
                             borderWidth: 1
                         },
                         {
                             type: 'line',
                             label: 'France',
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: 'blue',
-                            borderColor: 'red',
+                            data: [25, 15, 5, 100],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.7)',
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 206, 86, 0.7)',
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                            ],
                             borderWidth: 1
                         }]
                     }}
