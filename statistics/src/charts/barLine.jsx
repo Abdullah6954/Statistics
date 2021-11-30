@@ -15,9 +15,9 @@ class BarLine extends Component{
                             label: 'Germany',
                             data: [23, 24, 15, 100],
                             backgroundColor: [
-                                'rgba(255, 99, 132, 0.7)',
-                                'rgba(54, 162, 235, 0.7)',
-                                'rgba(255, 206, 86, 0.7)',
+                                'rgba(255, 99, 132, 0.9)',
+                                'rgba(54, 162, 235, 0.9)',
+                                'rgba(255, 206, 86, 0.9)',
                             ],
                             borderColor: [
                                 'rgba(255, 99, 132, 1)',
@@ -31,9 +31,9 @@ class BarLine extends Component{
                             label: 'France',
                             data: [25, 15, 5, 100],
                             backgroundColor: [
-                                'rgba(255, 99, 132, 0.7)',
-                                'rgba(54, 162, 235, 0.7)',
-                                'rgba(255, 206, 86, 0.7)',
+                                'rgba(255, 99, 132, 0.9)',
+                                'rgba(54, 162, 235, 0.9)',
+                                'rgba(255, 206, 86, 0.9)',
                             ],
                             borderColor: [
                                 'rgba(255, 99, 132, 1)',

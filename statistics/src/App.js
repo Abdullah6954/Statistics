@@ -1,33 +1,33 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'aos/dist/aos.css';
-import AOS from 'aos';
-import React, { useEffect } from 'react';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import React, { useEffect } from "react";
 
 // Charts
-import BarChart from './charts/bar';
-import LineChart from './charts/line';
-import BarLine from './charts/barLine';
-import DoughnutChart from './charts/doughnut';
+import BarChart from "./charts/bar";
+import LineChart from "./charts/line";
+import BarLine from "./charts/barLine";
+import DoughnutChart from "./charts/doughnut";
+import Food from "./charts/food";
 
 // Components
-import Nav from './components/nav';
-import Intro from './components/intro';
-import Gap from './components/gap';
-import Calories from './components/calories';
+import Nav from "./components/nav";
+import Intro from "./components/intro";
+import Gap from "./components/gap";
+import Calories from "./components/calories";
 
 function App() {
   // AOS Settings
   useEffect(() => {
     AOS.init({
-      duration : 1000
+      duration: 1000,
     });
   }, []);
-  
+
   // JSX
   return (
     <div id="App">
-
       <section id="home">
         <Nav />
         <Intro />
@@ -37,7 +37,7 @@ function App() {
         <Gap />
       </section>
 
-      <section id="countries" style={{height: '100vh'}}>
+      <section id="countries" style={{ height: "100vh" }}>
         <div id="chartsDiv">
           <BarChart />
           <LineChart />
@@ -47,7 +47,11 @@ function App() {
         </div>
       </section>
 
-      <section id="world" className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
+      <section
+        id="world"
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
         <DoughnutChart />
       </section>
 
@@ -55,6 +59,9 @@ function App() {
         <Calories />
       </section>
 
+      <section className="vh-100 w-100">
+        <Food />
+      </section>
     </div>
   );
 }
