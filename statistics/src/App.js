@@ -16,6 +16,7 @@ import Nav from "./components/nav";
 import Intro from "./components/intro";
 import Gap from "./components/gap";
 import Calories from "./components/calories";
+import Diseases from "./components/diseases";
 
 function App() {
   // AOS Settings
@@ -61,6 +62,10 @@ function App() {
 
       <section className="vh-100 w-100">
         <Food />
+      </section>
+
+      <section id="diseases">
+        <Diseases />
       </section>
     </div>
   );
