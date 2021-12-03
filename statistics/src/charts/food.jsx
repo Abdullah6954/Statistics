@@ -38,7 +38,7 @@ class Food extends Component {
 
   render() {
     return (
-      <div style={{height:'100vh'}}>
+      <div data-aos="flip-down" style={{height:'100vh'}}>
         <Chart
             options={this.state.options}
             series={this.state.series}

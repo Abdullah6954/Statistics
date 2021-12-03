@@ -51,7 +51,8 @@ class Nav extends Component{
                         <div style={!this.state.hovered ? this.style.div : this.style.divHover}>
                             <a href="#world">World</a>
                             <a href="#countries">Countries</a>
-                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#fastFood">Fast Food</a>
+                            <a href="#fastFood">Fast Food</a>
+                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#diseases">Diseases</a>
                         </div>
                     </li>
                 </ul>
