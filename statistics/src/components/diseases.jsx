@@ -19,7 +19,13 @@ class Diseases extends Component{
         return(
             <div>
                 <article>
-                    {this.state.cards.map(card => <div data-aos={card.aos} data-aos-duration={card.duration} key={card.key} data-text={card.text}><img src={card.svg} alt={card.text}/></div>)}
+                    {this.state.cards.map(card => <div
+                                                    data-aos={card.aos}
+                                                    data-aos-duration={card.duration} 
+                                                    key={card.key}
+                                                    data-text={card.text}>
+                                                        <img src={card.svg} alt={card.text}/>
+                                                   </div>)}
                 </article>
             </div>
         );

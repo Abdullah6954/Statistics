@@ -52,7 +52,8 @@ class Nav extends Component{
                             <a href="#world">World</a>
                             <a href="#countries">Countries</a>
                             <a href="#fastFood">Fast Food</a>
-                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#diseases">Diseases</a>
+                            <a href="#diseases">Diseases</a>
+                            <a style={{borderBottomLeftRadius: 5, borderBottomRightRadius: 5}} href="#summary">Summary</a>
                         </div>
                     </li>
                 </ul>

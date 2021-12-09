@@ -17,6 +17,8 @@ import Intro from "./components/intro";
 import Gap from "./components/gap";
 import Calories from "./components/calories";
 import Diseases from "./components/diseases";
+import Summary from "./components/summary";
+import Footer from "./components/footer";
 
 function App() {
   // AOS Settings
@@ -66,6 +68,14 @@ function App() {
 
       <section id="diseases">
         <Diseases />
+      </section>
+
+      <section id="summary">
+        <Summary />
+      </section>
+
+      <section id="footer">
+        <Footer />
       </section>
     </div>
   );
