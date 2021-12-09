@@ -16,8 +16,8 @@ class Footer extends Component{
             {key: 1, text: 'CSS', svg: css},
             {key: 2, text: 'Javascript', svg: javascript},
             {key: 3, text: 'React', svg: react},
-            {key: 4, text: 'Bootstrap', svg: bootstrap},
             {key: 5, text: 'Google', svg: google},
+            {key: 4, text: 'Bootstrap', svg: bootstrap},
         ]
     }
     render(){
