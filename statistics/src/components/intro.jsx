@@ -5,7 +5,7 @@ const Intro = () => {
     return(
         <div data-aos="zoom-out" id="intro">
             <img data-aos="flip-left" src={statis} alt="statis" />
-            <h3 data-aos="flip-right">Welcome To My Presentation</h3>
+            <h3 data-aos="flip-right">L'OBÉSITÉ</h3>
         </div>
     );
     

@@ -10,9 +10,9 @@ class BarLine extends Component{
                 height={100}
                     data={{
                         type: 'bar',
-                        labels: ['Male', 'Female', 'Kids'],
+                        labels: ['Homme', 'Femme', 'Enfants'],
                         datasets: [{
-                            label: 'Germany',
+                            label: "Allemagne",
                             data: [23, 24, 15, 100],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.9)',
@@ -54,7 +54,12 @@ class BarLine extends Component{
                         },
                         scales: {
                             y: {
-                                beginAtZero: true
+                                beginAtZero: true,
+                                ticks:{
+                                    callback: function(value, index, values) {
+                                        return '%' + value;
+                                    }
+                                }
                             }
                         }
                     }}

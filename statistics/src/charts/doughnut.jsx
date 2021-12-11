@@ -5,15 +5,15 @@ class DoughnutChart extends Component{
     render(){
         return(
             <div data-aos="zoom-out">
-                <span>The World</span>
+                <span>LE MONDE</span>
                 <Doughnut
                     width={100}
                     height={100}
                         data={{
                             type: 'doughnut',
-                            labels: ['Obesity', 'No Obesity'],
+                            labels: ['Obèses', "Non obèses"],
                             datasets: [{
-                                label: 'The World',
+                                label: 'Dans le monde',
                                 data: [23, 77],
                                 backgroundColor: [
                                     '#f50057',

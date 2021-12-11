@@ -4,7 +4,7 @@ class Gap extends Component{
     render(){
         return(
             <div data-aos="zoom-out-up" id="gap">
-                <h3>Statistics</h3>
+                <h3>Statistiques</h3>
             </div>
         );
     }

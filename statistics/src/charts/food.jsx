@@ -11,7 +11,7 @@ class Food extends Component {
           id: "basic-bar"
         },
         xaxis: {
-          categories: ['Hamburger', 'Fries', 'Pizza', 'Sausage'],
+          categories: ['Hamburger', 'Frites', 'Pizza', 'Saucisse'],
           labels: {
               style: {
                 fontSize: '20px',
